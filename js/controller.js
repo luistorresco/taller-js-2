@@ -173,3 +173,61 @@ function calcularEdad() {
 
     document.getElementById("edad").textContent = "La edad actual es: " + edad;
 }
+
+//* solucion 8 //
+
+function dias (){
+    let nombre = parseInt(document.getElementById("nombre").value);
+    let edadPaciente = parseInt(document.getElementById("edadPaciente").value);
+    let diasPaciente = parseInt(document.getElementById("diasPaciente").value);
+
+    if  (diasPaciente <= 10 ){
+        if (diasPaciente <=1){ 
+            let valorDia = 20000;
+            document.getElementById("nombre").textContent = "Nombre del paciente: " + nombre;
+            document.getElementById("diasPaciente").textContent = "dias hospitalizacion: " + diasPaciente;
+            document.getElementById("valorDia").textContent = "Valor dias de Hospitalizacion: " + valorDia;
+            document.getElementById("valorDia").textContent = "total a pagar: " + valorDia;
+            
+        }else if (diasPaciente >=2 && diasPaciente <= 4){
+            let valorDia = 30000;
+            let TotalAPagar = valorDia * diasPaciente;
+            document.getElementById("nombre").textContent = "Nombre del paciente: " + nombre;
+            document.getElementById("diasPaciente").textContent = "dias hospitalizacion: " + diasPaciente;
+            document.getElementById("valorDia").textContent = "Valor dias de Hospitalizacion: " + valorDia;
+            document.getElementById("TotaAPagar").textContent = "total a pagar: " + TotalAPagar;
+
+
+        }else if (diasPaciente >=5 && diasPaciente <=7){
+            let valorDia = 25000;
+            let TotalAPagar = valorDia * diasPaciente;
+            let recargo = TotalAPagar * 5/100;
+            let totalConRecargo = TotalAPagar + recargo;
+            document.getElementById("nombre").textContent = "Nombre del paciente: " + nombre;
+            document.getElementById("diasPaciente").textContent = "dias hospitalizacion: " + diasPaciente;
+            document.getElementById("valorDia").textContent = "Valor dias de Hospitalizacion: " + valorDia;
+            document.getElementById("recargo").textContent = "Recargo 5%: " + recargo;
+            document.getElementById("TotalConRecargo").textContent = "total a pagar: " + totalConRecargo;
+
+
+        }else{
+            let valorDia =15000;
+            let TotalAPagar = valorDia * diasPaciente;
+            let recargo = TotalAPagar * 10/100;
+            let totalConRecargo = TotalAPagar + recargo;
+            document.getElementById("nombre").textContent = "Nombre del paciente: " + nombre;
+            document.getElementById("diasPaciente").textContent = "dias hospitalizacion: " + diasPaciente;
+            document.getElementById("valorDia").textContent = "Valor dias de Hospitalizacion: " + valorDia;
+            document.getElementById("recargo").textContent = "Recargo 5%: " + recargo;
+            document.getElementById("TotalConRecargo").textContent = "total a pagar: " + totalConRecargo;
+
+        }
+            
+    }else if (edadPaciente <=11 && edadPaciente <=17){
+
+    }else if (edadPaciente >=18 && edadPaciente <=49){
+
+    }else{
+
+    }
+}

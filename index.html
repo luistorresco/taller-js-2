@@ -5,21 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taller 2</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <!--ejercicio 1 -->
-    <h1>Ejercicio 1</h1>
+    <h2>Ejercicio 1</h2>
     <p>1.	Pide al usuario un número y determina si es par o impar y si es positivo o negativo.</p>
     <label for="numeroInput">Ingresa un número:</label>
     <input type="number" id="numeroInput">
     <button onclick="verificarNumero()">Verificar</button>
 
-    <h2>Resultados:</h2>
-    <p id="resultadoParImpar"></p>
-    <p id="resultadoPosNegCero"></p>
+    <h3>Resultados:</h3>
+    <p style="color: brown;" id="resultadoParImpar"></p>
+    <p style="color: brown;"  id="resultadoPosNegCero"></p>
 
 <!--ejercicio 2 -->
-    <h1>Ejercicio 2</h1>
+    <h2>Ejercicio 2</h2>
     <p>2.	Pide al usuario dos números y determina cual es el número mayor y cual es el menor</p>
     <label for="numero1Input">Ingresa el primer número:</label>
     <input type="number" id="numero1Input">
@@ -29,34 +30,34 @@
     <br>
     <button onclick="compararNumeros()">Comparar</button>
 
-    <h2>Resultado:</h2>
-    <p id="resultado"></p>
+    <h3>Resultado:</h3>
+    <p style="color: brown;"  id="resultado"></p>
 
 <!--ejercicio 3 -->
-    <h1>Ejercicio 3</h1>
+    <h2>Ejercicio 3</h2>
     <p>3.	Pide al usuario que digite un numero del 1 al 7 y Realiza el código correspondiente para saber cuál es el dia de la semana correspondiente al número digitado;</p>
     <label for="numeroInput">Ingresa un número del 1 al 7:</label>
     <input type="number" id="Input">
     <button onclick="obtenerDiaSemana()">Obtener día</button>
 
-    <h2>Resultado:</h2>
-    <p id="respuesta"></p>
+    <h3>Resultado:</h3>
+    <p style="color: brown;"  id="respuesta"></p>
 
     <!--ejercicio 4 -->
 
-    <h1>Ejercicio 4</h1>
+    <h2>Ejercicio 4</h2>
     <p>4.   Se necesita clasificar la etapa de una persona solo pidiéndole como dato su edad. (Si la edad es menor de 18 es adolente), (si la edad está en el rango de 18 a 28 es adulto adolecente), (si la edad está entre 29 a 49 es adulto), (si la edad está entre 50 en adelante es adulto mayor). 
     Mostrar en pantalla la etapa de la persona.</p>
     <label for="edadInput">Ingresa la edad:</label>
     <input type="number" id="edadInput">
     <button onclick="clasificarEtapa()">Clasificar</button>
 
-    <h2>Resultado:</h2>
-    <p id="resulta"></p>
+    <h3>Resultado:</h3>
+    <p style="color: brown;"  id="resulta"></p>
 
 <!--ejercicio 5 -->
 
-    <h1>Respuesta 5</h1>
+    <h2>Ejercicio 5</h2>
     <p>5.   Realice una factura de venta, ingrese el valor de 3 productos y calcule lo siguiente: <br>
         si paga en efectivo paga el valor total. <br>
         si paga con cupón realice un 3% de descuento <br>
@@ -80,12 +81,12 @@
 
     <button onclick="calcularTotal()">Calcular</button>
 
-    <h2>Resultado:</h2>
-    <p id="total"></p>
+    <h3>Resultado:</h3>
+    <p style="color: brown;"  id="total"></p>
 
 <!--ejercicio 6 -->
 
-    <h1>Respuesta 6</h1>
+    <h2>Ejercicio 6</h2>
     <p>6.	 Se pide ingresar 3 notas y calcular el promedio de un alumno, mostrar el nivel del alumnos según su promedio: <br>
         *  menos 2,0 = Malo <br>
         *  menos 2,9 = Debe recuperar <br>
@@ -104,13 +105,13 @@
 
     <button onclick="calcularPromedio()">Calcular</button>
 
-    <h2>Resultado:</h2>
-    <p id="promedio"></p>
-    <p id="nivel"></p>
+    <h3>Resultado:</h3>
+    <p style="color: brown;"  id="promedio"></p>
+    <p style="color: brown;"  id="nivel"></p>
 
-<!--ejercicio  -->
+<!--ejercicio 7 -->
 
-    <h1>respuesta 7</h1>
+    <h2>Ejercicio 7</h2>
     <p>Calcula la edad actual de una persona a partir de su fecha de nacimiento.
     Los datos a pedir son: día, mes y año de nacimiento</p>
     <label for="diaInput">Día de nacimiento:</label>
@@ -124,8 +125,34 @@
 
     <button onclick="calcularEdad()">Calcular</button>
 
-    <h2>Resultado:</h2>
-    <p id="edad"></p>
+    <h3>Resultado:</h3>
+    <p style="color: brown;"  id="edad"></p>
+
+
+    <!--ejercicio 8-->
+    <h2>ejercicio 8</h2>
+    <label for="diaInput">Ingrese Su Nombre:</label>
+    <input type="text" id="nombre" min="1" max="31"><br>
+
+    <label for="mesInput">Ingrese su Edad:</label>
+    <input type="number" id="edadPaciente" min="1" max="100"><br>
+
+    <label for="anioInput">Ingrese dias de estancia en el Hospital :</label>
+    <input type="number" id="diasPaciente" min="1" max="10000"><br>
+
+    <button onclick="dias()">Calcular</button>
+
+    <h3>Resultado:</h3>
+    <p style="color: brown;" id="nombre"></p>
+    <p style="color: brown;" id="diasPaciente"></p>
+    <p style="color: brown;" id="valorDia"></p>
+    <p style="color: brown;" id="recargo"></p>
+    <p style="color: brown;" id="TotalConRecargo"></p>
+
+    <hr>
+    <p>Desarrollador: Luis Fernando Torres Correa</p>
+    <p>Materia: introducccion moviles 1</p>
+    
     <script src="./js/controller.js"></script>
 </body>
 </html>
