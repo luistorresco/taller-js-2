@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller 2</title>
+</head>
+<body>
+    <!--ejercicio 1 -->
+    <h1>Ejercicio 1</h1>
+    <p>1.	Pide al usuario un número y determina si es par o impar y si es positivo o negativo.</p>
+    <label for="numeroInput">Ingresa un número:</label>
+    <input type="number" id="numeroInput">
+    <button onclick="verificarNumero()">Verificar</button>
+
+    <h2>Resultados:</h2>
+    <p id="resultadoParImpar"></p>
+    <p id="resultadoPosNegCero"></p>
+
+<!--ejercicio 2 -->
+    <h1>Ejercicio 2</h1>
+    <p>2.	Pide al usuario dos números y determina cual es el número mayor y cual es el menor</p>
+    <label for="numero1Input">Ingresa el primer número:</label>
+    <input type="number" id="numero1Input">
+    <br>
+    <label for="numero2Input">Ingresa el segundo número:</label>
+    <input type="number" id="numero2Input">
+    <br>
+    <button onclick="compararNumeros()">Comparar</button>
+
+    <h2>Resultado:</h2>
+    <p id="resultado"></p>
+
+<!--ejercicio 3 -->
+    <h1>Ejercicio 3</h1>
+    <p>3.	Pide al usuario que digite un numero del 1 al 7 y Realiza el código correspondiente para saber cuál es el dia de la semana correspondiente al número digitado;</p>
+    <label for="numeroInput">Ingresa un número del 1 al 7:</label>
+    <input type="number" id="Input">
+    <button onclick="obtenerDiaSemana()">Obtener día</button>
+
+    <h2>Resultado:</h2>
+    <p id="respuesta"></p>
+
+    <!--ejercicio 4 -->
+
+    <h1>Ejercicio 4</h1>
+    <p>4.   Se necesita clasificar la etapa de una persona solo pidiéndole como dato su edad. (Si la edad es menor de 18 es adolente), (si la edad está en el rango de 18 a 28 es adulto adolecente), (si la edad está entre 29 a 49 es adulto), (si la edad está entre 50 en adelante es adulto mayor). 
+    Mostrar en pantalla la etapa de la persona.</p>
+    <label for="edadInput">Ingresa la edad:</label>
+    <input type="number" id="edadInput">
+    <button onclick="clasificarEtapa()">Clasificar</button>
+
+    <h2>Resultado:</h2>
+    <p id="resulta"></p>
+
+<!--ejercicio 5 -->
+
+    <h1>Respuesta 5</h1>
+    <p>5.   Realice una factura de venta, ingrese el valor de 3 productos y calcule lo siguiente: <br>
+        si paga en efectivo paga el valor total. <br>
+        si paga con cupón realice un 3% de descuento <br>
+        si paga a crédito aumente el 5% al total. <br>
+        </p>
+    <label for="producto1Input">Valor del producto 1:</label>
+    <input type="number" step="0.01" id="producto1Input"><br>
+
+    <label for="producto2Input">Valor del producto 2:</label>
+    <input type="number" step="0.01" id="producto2Input"><br>
+
+    <label for="producto3Input">Valor del producto 3:</label>
+    <input type="number" step="0.01" id="producto3Input"><br>
+
+    <label for="metodoPagoSelect">Método de pago:</label>
+    <select id="metodoPagoSelect">
+        <option value="efectivo">Efectivo</option>
+        <option value="cupon">Cupón (3% de descuento)</option>
+        <option value="credito">Crédito (5% de recargo)</option>
+    </select><br>
+
+    <button onclick="calcularTotal()">Calcular</button>
+
+    <h2>Resultado:</h2>
+    <p id="total"></p>
+
+<!--ejercicio 6 -->
+
+    <h1>Respuesta 6</h1>
+    <p>6.	 Se pide ingresar 3 notas y calcular el promedio de un alumno, mostrar el nivel del alumnos según su promedio: <br>
+        *  menos 2,0 = Malo <br>
+        *  menos 2,9 = Debe recuperar <br>
+        * entre 3 - 3,9 = Regular. <br>
+        * entre 4 - 4,4 = Bueno. <br>
+        * entre 4,5 - 5 = Muy bueno. <br>
+        </p>
+    <label for="nota1Input">Nota 1:</label>
+    <input type="number" step="0.01" id="nota1Input"><br>
+
+    <label for="nota2Input">Nota 2:</label>
+    <input type="number" step="0.01" id="nota2Input"><br>
+
+    <label for="nota3Input">Nota 3:</label>
+    <input type="number" step="0.01" id="nota3Input"><br>
+
+    <button onclick="calcularPromedio()">Calcular</button>
+
+    <h2>Resultado:</h2>
+    <p id="promedio"></p>
+    <p id="nivel"></p>
+
+<!--ejercicio  -->
+
+    <h1>respuesta 7</h1>
+    <p>Calcula la edad actual de una persona a partir de su fecha de nacimiento.
+    Los datos a pedir son: día, mes y año de nacimiento</p>
+    <label for="diaInput">Día de nacimiento:</label>
+    <input type="number" id="diaInput" min="1" max="31"><br>
+
+    <label for="mesInput">Mes de nacimiento:</label>
+    <input type="number" id="mesInput" min="1" max="12"><br>
+
+    <label for="anioInput">Año de nacimiento:</label>
+    <input type="number" id="anioInput" min="1900" max="2099"><br>
+
+    <button onclick="calcularEdad()">Calcular</button>
+
+    <h2>Resultado:</h2>
+    <p id="edad"></p>
+    <script src="./js/controller.js"></script>
+</body>
+</html>
